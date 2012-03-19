@@ -26,7 +26,7 @@ class Report < ActiveRecord::Base
   def self.generate_daily_report
     @path = Report.create_daily_folder
     @scripts = Script.find_daily_scripts
-    @connection = Exasol.new('lwlodarczyk','lwl0d4rczyk')
+    @connection = Exasol.new('*********','*********')
     @connection.connect
     Script.process_scripts(@scripts, @path)
     @connection.disconnect
