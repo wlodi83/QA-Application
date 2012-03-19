@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QA Application</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+
+  <div id="header" class="span-24 last">
+  <%= image_tag "sponsorpay-logo.png" %>
+  </div>
+
+  <div class="span-4">
+  <h3>Menu:</h3>
+  <%= render :partial => "shared/menu" %>
+  </div>
+
+  <div class="span-20 last">
+  <%= yield %>
+  </div>
+
+  <div class="span-24">
+  <p class="small" style="text-align: center">SponsorPay GmbH</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+daily:
+  name: "daily"
+
+weekly:
+  name: "weekly"
+
+monthly:
+  name: "monthly"

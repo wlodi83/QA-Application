@@ -1,0 +1,41 @@
+<fieldset>
+  <legend>Script</legend>
+  <p>
+    <label for="title">Title</label>
+    <%= text_field :script, :title, :value => @script.title %>
+  </p>
+  <p>
+    <label for="description">Description</label>
+    <%= text_area :script, :description, :value => @script.description %>
+  </p>
+  <p>
+    <label for="query">Query</label>
+    <%= text_area :script, :query, :value => @script.query %>
+  </p>
+  <p>
+    <label for="active">Active</label>
+    <%= check_box :script, :active, :value => @script.active %>
+  </p>
+  <p>
+    <label for="frequencies">Frequency</label>
+    <% @frequencies.each do |frequency| %>
+    <%= check_box_tag(
+            "script[frequency_list][#{frequency.id}]",
+            "1",
+            @script.frequencies.detect{|d| d == frequency}
+        ) %>
+        <%= "#{frequency.name}" %> <br />
+     <% end %>
+  </p>
+  <p>
+    <label for="users">User</label>
+    <% @users.each do |user| %>
+    <%= check_box_tag(
+            "script[user_list][#{user.id}]",
+            "1",
+            @script.users.detect{|d| d == user}
+        ) %>
+        <%= "#{user.name}" %><br />
+    <% end %>
+  </p>
+</fieldset>

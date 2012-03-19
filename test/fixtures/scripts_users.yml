@@ -1,0 +1,39 @@
+scripts_users_active_daily:
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_daily) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_daily_broken:
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_daily) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_active_weekly_1:
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_weekly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_active_weekly_2:
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_weekly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:jose) %>
+
+scripts_users_broken_weekly_1:
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_weekly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_broken_weekly_2:
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_weekly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:jose) %>
+
+scripts_users_active_monthly_1:
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_monthly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:jose) %>
+
+scripts_users_active_monthly_2:
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_monthly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_broken_monthly_1:
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_monthly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:lukasz) %>
+
+scripts_users_broken_monthly_2:
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_monthly) %>
+  user_id: <%= ActiveRecord::Fixtures.identify(:jose) %>

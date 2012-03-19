@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>Script</legend>
+  <p>
+    <label for="title">Title</label>
+    <%= @script.title %>
+  </p>
+  <p>
+    <label for="description">Description</label>
+    <%= @script.description %>
+  </p>
+  <p>
+    <label for="query">Query</label>
+    <%= @script.query %>
+  </p>
+  <% if @script.err_message %>
+  <p>
+    <label for="err_message">Error Message</label>
+    <%= @script.err_message %>
+  </p>
+  <% end %>    
+</fieldset>
+
+<fieldset>
+<%= link_to 'Edit', edit_script_path(@script) %> |
+<%= link_to 'Back', scripts_path %>
+</fieldset>

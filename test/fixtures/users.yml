@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+lukasz:
+  name: Łukasz
+  surname: Włodarczyk
+  email: lukasz.wlodarczyk@yahoo.com
+
+jose:
+  name: Jose
+  surname: Guerra
+  email: wlodi@jamaicans.com

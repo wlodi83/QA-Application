@@ -1,0 +1,11 @@
+<h1>Editing script</h1>
+
+<%= form_for(@script) do |f| %>
+    <%= render :partial => 'form' %>
+
+    <fieldset>
+      <%= f.submit "Update" %>
+      <%= link_to 'Show', @script %> |
+      <%= link_to 'Back', scripts_path %>
+    </fieldset>
+<% end %>

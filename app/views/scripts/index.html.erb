@@ -1,0 +1,25 @@
+<h3>Listing scripts</h3>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Active</th>
+    <th>SQL Error</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scripts.each do |script| %>
+  <tr>
+    <td><%= script.title %></td>
+    <td><%= script.description %></td>
+    <td><%= script.active? ? "Yes" : "No" %></td>
+    <td><%= script.err_message.nil? ? "No" : "Yes" %></td>
+    <td><%= link_to 'Show', script %></td>
+    <td><%= link_to 'Edit', edit_script_path(script) %></td>
+    <td><%= link_to 'Destroy', script, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>

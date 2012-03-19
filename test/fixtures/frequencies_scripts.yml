@@ -1,0 +1,23 @@
+frequencies_scripts_active_daily:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:daily) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_daily) %>
+
+frequencies_scripts_broken_daily:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:daily) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_daily) %>
+
+frequencies_scripts_active_weekly:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:weekly) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_weekly) %>
+
+frequencies_scripts_broken_weekly:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:weekly) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_weekly) %>
+
+frequencies_scripts_active_monthly:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:monthly) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:active_monthly) %>
+
+frequencies_scripts_broken_monthly:
+  frequency_id: <%= ActiveRecord::Fixtures.identify(:monthly) %>
+  script_id: <%= ActiveRecord::Fixtures.identify(:broken_monthly) %>

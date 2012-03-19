@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+active_daily:
+  title: "Daily active Script"
+  description: "This is daily active query"
+  query: "select max(created_at) from ids.track_offer_clicks"
+  err_message:
+  active: true
+
+broken_daily:
+  title: "Broken SQL script"
+  description: "This is broken daily SQL query"
+  query: "select * from ids.track_offer_click"
+  err_message: "Exasol notificiation"
+  active: false
+
+active_weekly:
+  title: "Weekly active script"
+  description: "This is weekly active weekly script"
+  query: "select max(created_at) from ids.track_offer_clicks"
+  err_message:
+  active: true
+
+broken_weekly:
+  title: "Weekly broken script"
+  description: "This is weekly broken weekly script"
+  query: "select max from ids.track"
+  err_message: "Exasol notification"
+  active: false
+
+active_monthly:
+  title: "Monthly active script"
+  description: "This is monthly active script"
+  query: "select max(created_at) from ids.track_offer_clicks"
+  err_message:
+  active: true
+
+broken_monthly:
+  title: "Monthly broken script"
+  description: "This is monthly broken script"
+  query: "select * from cms.qa"
+  err_message: "Exasol notification"
+  active: false
