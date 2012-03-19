@@ -35,7 +35,7 @@ class Report < ActiveRecord::Base
   def self.generate_weekly_report
     @path = Report.create_weekly_folder
     @scripts = Script.find_weekly_scripts
-    @connection = Exasol.new('lwlodarczyk','lwl0d4rczyk')
+    @connection = Exasol.new('*********','*********')
     @connection.connect
     Script.process_scripts(@scripts, @path)
     @connection.disconnect
@@ -44,7 +44,7 @@ class Report < ActiveRecord::Base
   def self.generate_monthly_report
     @path = Report.create_monthly_folder
     @scripts = Script.find_monthly_scripts
-    @connection = Exasol.new('lwlodarczyk','lwl0d4rczyk')
+    @connection = Exasol.new('*********','*********')
     @connection.connect
     Script.process_scripts(@scripts, @path)
     @connection.disconnect
