@@ -17,6 +17,8 @@ gem 'ruby-odbc'
 gem 'rufus-scheduler'
 gem 'blueprint-rails'
 gem 'request-log-analyzer'
+gem 'eventmachine', "1.0.0.beta.4.1"
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.

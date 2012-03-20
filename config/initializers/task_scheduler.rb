@@ -5,7 +5,8 @@ require 'rufus/scheduler'
 
 scheduler = Rufus::Scheduler.start_new
 
-scheduler.every("1h") do
+#every day of the week at 5 o'clock
+scheduler.cron '00 05 * * 1-5' do
   Report.generate_daily_report
 end
 
