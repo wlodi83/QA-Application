@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e079505d-20a5-4acc-98da-7aa188327762" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_mailer/send_html_report_email.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_admin.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_category.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_port.html.erb" />
-      <change type="MOVED" beforePath="C:\QA-Application\app\views\report_mailer\send_report_email.html.erb" afterPath="$PROJECT_DIR$/app/views/report_mailer/send_excel_report_email.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/categories_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/categories_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/category_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/scripts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/scripts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/report_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/report_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report.rb" afterPath="$PROJECT_DIR$/app/models/report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/script.rb" afterPath="$PROJECT_DIR$/app/models/script.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scripts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/scripts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scripts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/scripts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/setup_mail.rb" afterPath="$PROJECT_DIR$/config/initializers/setup_mail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/task_scheduler.rb" afterPath="$PROJECT_DIR$/config/initializers/task_scheduler.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/exasol.rb" afterPath="$PROJECT_DIR$/lib/exasol.rb" />
     </list>
     <ignored path="qa_application.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,6 +220,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="qa_application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QA-Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -662,7 +662,15 @@
       <created>1332281605436</created>
       <updated>1332281605436</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added:&#10;&#10;- Email HTML content&#10;- Categories">
+      <created>1335101575889</created>
+      <updated>1335101575889</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added:&#10;&#10;- Email HTML content&#10;- Categories">
+      <created>1335101764113</created>
+      <updated>1335101764113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
