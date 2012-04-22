@@ -1,4 +1,8 @@
 QaApplication::Application.routes.draw do
+  resources :categories
+  resources :categories do
+    resources :scripts
+  end
   root :to => 'scripts#index'
   resources :frequencies
   resources :users

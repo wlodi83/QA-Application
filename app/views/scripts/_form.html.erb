@@ -17,12 +17,16 @@
     <%= check_box :script, :active, :value => @script.active %>
   </p>
   <p>
+    <label for="email_form">Email Form</label>
+    <%=  check_box :script, :email_form, :value => @script.email_form %>
+  </p>
+  <p>
     <label for="frequencies">Frequency</label>
     <% @frequencies.each do |frequency| %>
     <%= check_box_tag(
             "script[frequency_list][#{frequency.id}]",
             "1",
-            @script.frequencies.detect{|d| d == frequency}
+            @script.frequencies.detect{|f| f == frequency}
         ) %>
         <%= "#{frequency.name}" %> <br />
      <% end %>
@@ -33,9 +37,20 @@
     <%= check_box_tag(
             "script[user_list][#{user.id}]",
             "1",
-            @script.users.detect{|d| d == user}
+            @script.users.detect{|u| u == user}
         ) %>
         <%= "#{user.name}" %><br />
+    <% end %>
+  </p>
+  <p>
+    <label for="categories">Category</label>
+    <% @categories.each do |category| %>
+    <%= check_box_tag(
+            "script[category_list][#{category.id}]",
+            "1",
+            @script.categories.detect{|c| c == category}
+        ) %>
+        <%=  "#{category.name}" %>
     <% end %>
   </p>
 </fieldset>

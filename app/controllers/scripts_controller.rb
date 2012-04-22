@@ -27,6 +27,7 @@ class ScriptsController < ApplicationController
     @script = Script.new
     get_all_frequencies
     get_all_users
+    get_all_categories
 
     respond_to do |format|
       format.html # new.html.erb
@@ -39,6 +40,7 @@ class ScriptsController < ApplicationController
     @script = Script.find(params[:id])
     get_all_frequencies
     get_all_users
+    get_all_categories
   end
 
   # POST /scripts
@@ -47,6 +49,7 @@ class ScriptsController < ApplicationController
     @script = Script.new(params[:script])
     get_all_frequencies
     get_all_users
+    get_all_categories
 
     respond_to do |format|
       if @script.save
@@ -68,6 +71,8 @@ class ScriptsController < ApplicationController
     @script = Script.find(params[:id])
     get_all_frequencies
     get_all_users
+    get_all_categories
+
     @script.err_message = nil if !@script.err_message.nil?
 
     respond_to do |format|
@@ -102,5 +107,9 @@ class ScriptsController < ApplicationController
 
   def get_all_users
     @users = User.all(:order => 'name')
+  end
+
+  def get_all_categories
+    @categories = Category.all(:order => 'name')
   end
 end

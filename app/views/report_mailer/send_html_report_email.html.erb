@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+<h3>Hello <%= @user_name %></h3>
+<p>Today is <%= Time.now %></p>
+<p>Below is your QA report: <b color="red"><%= @report_title %></b></p> <br />
+<table width="50%" border="1" height="50%" style='position:relative'>
+  <thead>
+  <tr>
+    <% @name_of_columns.each do |nc| %>
+    <% nc.each do |header| %>
+        <th><%= header %></th>
+    <% end %>
+    <% end %>
+  </tr>
+  </thead>
+  <tbody>
+  <% @result_array.each do |row| %>
+    <tr>
+      <% row.each do |content| %>
+        <td><%= content %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</body>
+</html>

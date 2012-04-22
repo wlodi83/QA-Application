@@ -10,12 +10,18 @@
 <div class="container">
 
   <div id="header" class="span-24 last">
-  <%= image_tag "sponsorpay-logo.png" %>
+  <%= link_to image_tag("sponsorpay-logo.png"), root_url %>
   </div>
 
   <div class="span-4">
   <h3>Menu:</h3>
-  <%= render :partial => "shared/menu" %>
+  <%= render :partial => "shared/menu" %><br />
+  <h3>Category:</h3>
+  <%= render :partial => "shared/category" %><br />
+  <h3>Netstat:</h3>
+  <%= render :partial => "shared/port" %><br />
+  <h3>Admin:</h3>
+  <%= render :partial => "shared/admin" %><br />
   </div>
 
   <div class="span-20 last">

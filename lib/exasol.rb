@@ -20,6 +20,8 @@ class Exasol
       puts "Error message: #{e.errstr}"
       err_message = "#{e.errstr}"
       AlertMailer.send_alert(@@admin_email, err_message).deliver
+    ensure
+      @dbh.disconnect if @dbh
     end
   end
 
@@ -39,6 +41,8 @@ class Exasol
       puts "Error message: #{e.errstr}"
       err_message = "#{e.errstr}"
       AlertMailer.send_alert(@@admin_email, err_message).deliver
+    ensure
+      @dbh.disconnect if @dbh
     end
   end
 
@@ -57,6 +61,8 @@ class Exasol
       @users.each do |user|
         AlertMailer.send_alert(user.email, err_message).deliver
       end
+    ensure
+      @dbh.disconnect if @dbh
     end
   end
 

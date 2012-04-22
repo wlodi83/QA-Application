@@ -5,6 +5,7 @@
     <th>Title</th>
     <th>Description</th>
     <th>Active</th>
+    <th>Email Form</th>
     <th>SQL Error</th>
     <th></th>
     <th></th>
@@ -16,6 +17,7 @@
     <td><%= script.title %></td>
     <td><%= script.description %></td>
     <td><%= script.active? ? "Yes" : "No" %></td>
+    <td><%= script.email_form? ? "Yes" : "No" %></td>
     <td><%= script.err_message.nil? ? "No" : "Yes" %></td>
     <td><%= link_to 'Show', script %></td>
     <td><%= link_to 'Edit', edit_script_path(script) %></td>

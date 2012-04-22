@@ -66,4 +66,12 @@ class Report < ActiveRecord::Base
     @exc.close
     return @excel_file_name, @path_to_excel_file
   end
+
+  def self.return_database_result(script)
+    @connection.do_query(script)
+    #create content
+    @name_of_columns = @connection.print_column_names
+    @result_array = @connection.print_result_array
+    return @name_of_columns, @result_array
+  end
 end
